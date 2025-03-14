@@ -1,0 +1,116 @@
+:root {
+    --boton: rgb(70, 70, 238);
+    --nav: rgba(52, 50, 92, 0.5);
+    --main: rgb(52, 50, 92);
+    --letra: rgba(255, 255, 255, 0.836);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+  
+body {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 9fr;
+    align-items: center;
+    background-image: url("fondo.jpg");
+    background-size: cover;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/*  Barra de navegación */
+
+nav {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--nav);
+    border-radius: 20px;
+    z-index: 2;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--letra);
+    font-size: 20px;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: var(--boton);
+}
+
+/* Presentacion */
+
+header {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    margin-left: 20px;
+    padding-left: 10px;
+    z-index: 2;
+}
+
+.linea {
+    height: 300px;
+    width: 5px;
+    background-color: var(--boton);
+    border-radius: 2px;
+}
+
+h1, .estado, p {
+    color: var(--letra);
+}
+
+.estado, .descripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.estado {
+    background-color: var(--boton);
+    width: 150px;
+    height: 30px;
+}
+
+.descripcion {
+    padding: 20px 0;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* CONTENIDO */
+
+main {
+    margin-right: 50px;
+    height: 80%;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: var(--main);
+}
