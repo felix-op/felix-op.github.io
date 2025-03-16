@@ -5,26 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Felix</title>
     <link rel="stylesheet" href="index.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <a>Proyectos</a>
-        <a>Estudios</a>
-        <a>Contacto</a>
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#estudios">Estudios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
     </nav>
     <header>
-        <div class="linea"></div>
-        <div>
+        <section id="contacto" class="presentacion">
             <h1>Felix Pérez</h1>
-            <p>Analista en Sistemas</p>
-        </div>
-        <span class="estado">Buscando trabajo</span>
-        <p class="descripcion">
-            Me gusta aprender, enseñar, y divertirme programando.
-        </p>
+            <h2>Analista en Sistemas</h2>
+        </section>
+        <section class="descripcion">
+            <p>
+                Me gusta aprender, enseñar, y divertirme programando.
+            </p>
+            <p>
+                Estoy a disposición para trabajar.
+            </p>
+            <p>
+                felixoscarperezsegovia@gmail.com <input type="button" value="copiar">
+            </p>
+        </section>
     </header>
     <main>
-        <div class="proyecto"></div>
+        <!-- <h2>Proyectos</h2>
+        <section id="proyectos" class="proyectos">
+            <div class="proyecto">
+                <img>
+                <h3>Administrador para una Facultad</h3>
+                <a>Link al proyecto</a>
+                <p>Caracteristicas del proyecto:</p>
+                <ul>
+                    <li>Conexión y uso de APIs</li>
+                    <li>Uso de Patrones de Diseño</li>
+                </ul>
+            </div>
+        </section> -->
+        <h2>Estudios</h2>
+        <section id="estudios" class="estudios">
+            <div class="estudio">
+                <h3>Licenciatura en Sistemas - UNTDF - 3er año - En curso</h3>
+                <a href="https://www.untdf.edu.ar/institutos/idei/sistemas" target="_blank">Plan de Estudios</a>
+                <p>Conocimientos Adquiridos:</p>
+                <ul>
+                    <li>Estructuras de Datos: Árboles, Grafos, algoritmos</li>
+                    <li>Diseño y uso de Base de Datos Relacionales</li>
+                    <li>Programación y diseño Orientada a Objetos</li>
+                    <li>Principios SOLID y Patrones de Diseño</li>
+                    <li>Ingeniería de Software, Requerimientos y Diseño</li>
+                    <li>Metodologías Ágiles, XP, SCRUM</li>
+                    <li>Estadística Desciptiva e Inferencial</li>
+                    <li>Principios de Arquitectura de Computadoras</li>
+                </ul>
+            </div>
+        </section>
+        <h2>Tecnologías de Manejo Diario</h2>
+        <section id="tecnologias">
+            <ul>
+                <li>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <p>Git</p>
+                </li>
+                <li>
+                    <i class="fa-brands fa-github"></i>
+                    <p>Github</p>
+                </li>
+                <li>
+                    <i class="fa-brands fa-python"></i>
+                    <p>Python</p>
+                </li>
+                <li>
+                    <i class="fa-brands fa-java"></i>
+                    <p>Java</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-database"></i>
+                    <p>Postgresql</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-table"></i>
+                    <p>Microsoft Excel</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-file-word"></i>
+                    <p>Microsoft Word</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-file-powerpoint"></i>
+                    <p>Microsoft PowerPoint</p>
+                </li>
+                <li>
+                    <i class="fa-brands fa-figma"></i>
+                    <p>Figma</p>
+                </li>
+                <li>
+                    <i class="fa-brands fa-docker"></i>
+                    <p>Docker</p>
+                </li>
+                
+            </ul>
+        </section>
+        <h2>Herramientas que voy aprendiendo</h2>
+        <section id="herramientas">
+            <ul>
+                <li>
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                </li>
+                <li>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                </li>
+                <li>
+                    <i class="fa-brands fa-square-js"></i>
+                    <p>JavaScript</p>
+                </li>
+                <li>
+                    <i class="fa-brands fa-python"></i>
+                    <p>Django</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-database"></i>
+                    <p>SQLite</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-terminal"></i>
+                    <p>Bash</p>
+                </li>
+            </ul>
+        </section>
     </main>
     <script src="index.js"></script>
 </body>
